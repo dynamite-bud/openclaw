@@ -65,7 +65,7 @@ export TELNYX_API_KEY=...
   </Step>
   <Step title="Verify the live catalog">
     ```bash
-    openclaw models list --provider telnyx
+    openclaw models list --refresh --provider telnyx
     ```
 
     With usable auth, the plugin requests the authenticated `/models` endpoint and lists every model returned for the account. Without auth, it stays offline and uses the bundled fallback.
